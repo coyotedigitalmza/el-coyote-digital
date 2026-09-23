@@ -254,3 +254,21 @@ body {
         margin-bottom: 25px;
     }
 }
+
+/* BOTÓN WHATSAPP */
+.whatsapp {
+    bottom: 15px;
+    right: 15px;
+    padding: 13px 18px;
+    font-size: 15px;
+}
+
+/* WHATSAPP EN CELULAR */
+@media (max-width: 768px) {
+    .whatsapp {
+        bottom: 15px;
+        right: 12px;
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+}
