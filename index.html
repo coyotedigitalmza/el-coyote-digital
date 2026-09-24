@@ -6,17 +6,103 @@
   <title>El Coyote Digital</title>
   <link rel="stylesheet" href="estilos.css">
 </head>
-<body>
-  <header>
+<body><header>
     <div class="logo">EL COYOTE DIGITAL</div>
-    <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </header>
 
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+<section id="catalogo" class="catalogo">
+    <p class="etiqueta">NUESTRO CATÁLOGO</p>
+
+    <h2>Catálogo de servicios</h2>
+
+    <p class="catalogo-intro">
+        Soluciones digitales profesionales para potenciar
+        la imagen y las ventas de tu negocio.
+    </p>
+
+    <div class="catalogo-grid">
+
+        <article class="catalogo-card">
+            <div class="catalogo-icono">🎨</div>
+            <h3>Diseño Gráfico</h3>
+            <p>
+                Logos, identidad visual, flyers,
+                tarjetas, banners y piezas publicitarias.
+            </p>
+            <a class="boton" href="https://wa.me/549XXXXXXXXXX">
+                Consultar
+            </a>
+        </article>
+
+        <article class="catalogo-card">
+            <div class="catalogo-icono">📱</div>
+            <h3>Redes Sociales</h3>
+            <p>
+                Contenido profesional para Instagram,
+                Facebook, TikTok y WhatsApp.
+            </p>
+            <a class="boton" href="https://wa.me/549XXXXXXXXXX">
+                Consultar
+            </a>
+        </article>
+
+        <article class="catalogo-card">
+            <div class="catalogo-icono">📢</div>
+            <h3>Publicidad</h3>
+            <p>
+                Publicidades profesionales para promocionar
+                productos, servicios y promociones.
+            </p>
+            <a class="boton" href="https://wa.me/549XXXXXXXXXX">
+                Consultar
+            </a>
+        </article>
+
+        <article class="catalogo-card">
+            <div class="catalogo-icono">🌐</div>
+            <h3>Páginas Web</h3>
+            <p>
+                Sitios web modernos, rápidos y adaptados
+                perfectamente a celulares.
+            </p>
+            <a class="boton" href="https://wa.me/549XXXXXXXXXX">
+                Consultar
+            </a>
+        </article>
+
+        <article class="catalogo-card">
+            <div class="catalogo-icono">📸</div>
+            <h3>Publicidad de Productos</h3>
+            <p>
+                Imágenes publicitarias profesionales
+                para mostrar tus productos.
+            </p>
+            <a class="boton" href="https://wa.me/549XXXXXXXXXX">
+                Consultar
+            </a>
+        </article>
+
+        <article class="catalogo-card">
+            <div class="catalogo-icono">📖</div>
+            <h3>Catálogos Digitales</h3>
+            <p>
+                Catálogos profesionales para enviar
+                fácilmente por WhatsApp y redes sociales.
+            </p>
+            <a class="boton" href="https://wa.me/549XXXXXXXXXX">
+                Consultar
+            </a>
+        </article>
+
+    </div>
+</section>
   <main>
     <section id="inicio" class="hero">
       <div><img src="file_000000000630820e9904ab521646d138.png" alt="El Coyote Digital - Accesorios" class="imagen-principal">
@@ -74,3 +160,109 @@
     💬 WhatsApp
 </a></body>
 </html>
+/* =========================
+   CATÁLOGO
+========================= */
+
+.catalogo {
+    padding: 90px 20px;
+    background: #111;
+    text-align: center;
+}
+
+.catalogo .etiqueta {
+    color: #20d264;
+    font-weight: bold;
+    letter-spacing: 6px;
+    font-size: 15px;
+}
+
+.catalogo h2 {
+    color: #fff;
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.catalogo-intro {
+    color: #ccc;
+    max-width: 700px;
+    margin: 0 auto 50px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.catalogo-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.catalogo-card {
+    background: #1b1b1b;
+    border: 1px solid #292929;
+    border-radius: 18px;
+    padding: 30px 22px;
+    transition: 0.3s;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.catalogo-card:hover {
+    transform: translateY(-8px);
+    border-color: #20d264;
+}
+
+.catalogo-icono {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.catalogo-card h3 {
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.catalogo-card p {
+    color: #bbb;
+    line-height: 1.6;
+    min-height: 80px;
+}
+
+.catalogo-card .boton {
+    display: inline-block;
+    margin-top: 20px;
+    background: #20d264;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* CATÁLOGO EN CELULAR */
+
+@media (max-width: 768px) {
+
+    .catalogo {
+        padding: 60px 15px;
+    }
+
+    .catalogo h2 {
+        font-size: 34px;
+    }
+
+    .catalogo-intro {
+        font-size: 16px;
+    }
+
+    .catalogo-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .catalogo-card {
+        padding: 25px 20px;
+    }
+}
